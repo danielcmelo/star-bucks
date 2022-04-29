@@ -1,3 +1,30 @@
-body{
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .line {
+    background-color: #117050;
+    height: 10px;
+}
+
+.container{
+    max-width: 1144px;
+    margin: auto;
+}
+
+.container.header--area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header-left img{
+    width: 64px;
+    height: 64px;
 }
