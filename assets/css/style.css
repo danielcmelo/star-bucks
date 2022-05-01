@@ -7,6 +7,44 @@ body {
     box-sizing: border-box;
 }
 
+.bar{
+    width: 168px;
+    height: 22px;
+    background-color: #006341;
+}
+
+a.button{
+    border: 2px solid #454545;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 3px;
+    color: #454545;
+    text-decoration: none;
+}
+
+a.button:hover{
+    background-color: #454545;
+    color: white;
+}
+
+h1{
+    font-family: 'Oswald';
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 100px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-family: 'Oswald';
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 45px;
+    margin: 20px 0px;
+}
+
 header .line {
     background-color: #117050;
     height: 10px;
@@ -78,15 +116,6 @@ section.banner{
     padding-bottom: 90px;
 }
 
-section.banner h1{
-    font-family: 'Oswald';
-    font-size: 90px;
-    font-weight: bold;
-    line-height: 100px;
-    margin: 0;
-    margin-bottom: 30px;
-}
-
 .banner-images{
     margin-top: 60px;
 }
@@ -99,25 +128,79 @@ section.banner h1{
     margin-right: 25px;
 }
 
-section.area1{
+section.area1,
+section.area2,
+section.area3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.area1--content{
-
-}
-
-.area1--img1{
-    background-color: green;
+.area1--content,
+.area2--content{
+    padding: 80px;
 }
 
 .area1--img2{
-    background-color: red;
-
     grid-column-start: 2;
     grid-column-end:3;
 
     grid-row-start: 1;
     grid-row-end: 3;
+
+    background-image: url('../../media/f1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.area1--quote{
+    margin-bottom: 30px;
+}
+
+.area1--text,
+.area2--text,
+.area3--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area1--img1{
+    
+    background-image: url('../../media/f2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.area2--img1{
+   
+    background-image: url('../../media/f4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+}
+
+.area2--img2{
+    grid-column-start: 1;
+    grid-column-end:2;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    background-image: url('../../media/f3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.area3--content{
+    padding: 200px 80px;
+    background-image: url('../../media/bg2.jpg');
+    background-size: cover;
+    background-position: left;
+}
+
+.area3--img1{
+    background-image: url('../../media/f5.jpg');
+    background-size: cover;
+    background-position: center;
 }
